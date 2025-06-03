@@ -23,7 +23,15 @@ function CatFact() {
       <button onClick={fetchCatFact}>
         {loading ? "Loading..." : "Get a Cat Fact"}
       </button>
-      {fact && <p style={{ marginTop: "20px" }}>{fact}</p>}
+      <div
+        style={{
+          display: "flex",
+          justifyContent: "center",
+          alignItems: "center"
+        }}
+      >
+        {fact && <p><b>{fact}</b></p>}
+      </div>
     </div>
   );
 }
